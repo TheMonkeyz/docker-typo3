@@ -38,4 +38,6 @@ VOLUME /var/www/html/typo3temp
 VOLUME /var/www/html/uploads
 
 ADD ./run.sh /run.sh
+RUN chmod +x /run.sh
+
 CMD ["/run.sh"]
